@@ -28,3 +28,9 @@ dependencies {
 tasks.named('test') {
     useJUnitPlatform()
 }
+
+jib {
+    to {
+        image = 'gcr.io/timo-schaefer/demo'
+    }
+}
